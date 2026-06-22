@@ -54,6 +54,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
+
               <button className="bg-[#D86B2B] hover:bg-[#bf5e25] text-white rounded-full px-6 py-3 flex items-center gap-2 font-medium transition">
                 ORDER NOW
                 <MessageCircleMore size={20} />
@@ -97,10 +98,17 @@ export default function Navbar() {
             <span>+91 70076 56589</span>
           </div>
 
-          <button className="w-full mt-4 bg-[#D86B2B] text-white rounded-full py-3 flex items-center justify-center gap-2 cursor-pointer">
-            ORDER NOW
-            <MessageCircleMore size={20} />
-          </button>
+          <a
+            href="https://wa.me/917007656589?text=Hi SSD Bakers, I would like to place an order."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <button className="w-full mt-4 bg-[#D86B2B] text-white rounded-full py-3 flex items-center justify-center gap-2 cursor-pointer">
+              ORDER NOW
+              <MessageCircleMore size={20} />
+            </button>
+          </a>
 
         </div>
       </div>

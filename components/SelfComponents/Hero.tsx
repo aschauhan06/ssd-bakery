@@ -44,13 +44,19 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
 
-              <Button
-                size="lg"
-                className="rounded-full bg-orange-500 hover:bg-orange-600"
+              <a
+                href="https://wa.me/917007656589?text=Hi SSD Bakers, I would like to place an order."
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Order Now
-                <MessageCircleMore className="ml-2 h-4 w-4" />
-              </Button>
+                <Button
+                  size="lg"
+                  className="w-115 px-8 rounded-full bg-orange-500 hover:bg-orange-600"
+                >
+                  Order Now
+                  <MessageCircleMore className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
 
               <Button
                 variant="outline"
@@ -68,9 +74,9 @@ export default function Hero() {
             <div className="flex flex-wrap gap-6 mt-10 justify-center lg:justify-start">
 
               <div className="flex items-center gap-3 ">
-                
+
                 <Truck className="text-orange-500 " />
-                
+
                 <div>
                   <p className="font-semibold text-sm">
                     Same Day Delivery
