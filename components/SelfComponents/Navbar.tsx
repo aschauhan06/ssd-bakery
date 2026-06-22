@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Phone, ShoppingCart } from "lucide-react";
+import { Menu, X, Phone, ShoppingCart, MessageCircleMore } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Cakes", href:"/FeaturedCake" },
-  { label: "Categories", href: "/categories" },
-  { label: "About Us", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Home", href: "#hero" },
+  { label: "Cakes", href: "#cake" },
+  { label: "Categories", href: "#category" },
+  { label: "About Us", href: "#whyUs" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -23,7 +23,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="shrink-0">
-            <img src="/Images/SSDBakers.png" alt="No Image" className= "w-25 h-auto" />
+            <img src="/Images/SSDBakers.png" alt="No Image" className="w-25 h-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -49,10 +49,16 @@ export default function Navbar() {
               </span>
             </div>
 
-            <button className="bg-[#D86B2B] hover:bg-[#bf5e25] text-white rounded-full px-6 py-3 flex items-center gap-2 font-medium transition">
-              ORDER NOW
-              <ShoppingCart size={16} />
-            </button>
+            <a
+              href="https://wa.me/917007656589?text=Hi SSD Bakers, I would like to place an order."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#D86B2B] hover:bg-[#bf5e25] text-white rounded-full px-6 py-3 flex items-center gap-2 font-medium transition">
+                ORDER NOW
+                <MessageCircleMore size={20} />
+              </button>
+            </a>
 
           </div>
 
@@ -61,16 +67,15 @@ export default function Navbar() {
             className="lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={28} className="cursor-pointer" /> : <Menu size={28} className="cursor-pointer" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[500px]" : "max-h-0"
-        }`}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px]" : "max-h-0"
+          }`}
       >
         <div className="bg-white border-t px-4 py-4">
 
@@ -92,9 +97,9 @@ export default function Navbar() {
             <span>+91 70076 56589</span>
           </div>
 
-          <button className="w-full mt-4 bg-[#D86B2B] text-white rounded-full py-3 flex items-center justify-center gap-2">
+          <button className="w-full mt-4 bg-[#D86B2B] text-white rounded-full py-3 flex items-center justify-center gap-2 cursor-pointer">
             ORDER NOW
-            <ShoppingCart size={16}/>
+            <MessageCircleMore size={20} />
           </button>
 
         </div>

@@ -32,7 +32,7 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <section className="py-20 bg-[#FFF8F5]">
+    <section className="py-20 bg-[#FFF8F5] scroll-mt-24" id="faqs">
       <div className="container mx-auto px-4">
 
         {/* Heading */}

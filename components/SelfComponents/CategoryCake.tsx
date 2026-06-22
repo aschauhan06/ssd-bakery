@@ -41,7 +41,7 @@ const categories = [
 
 export default function CakeCategories() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white scroll-mt-24" id="category">
       <div className="container mx-auto px-4">
 
         {/* Heading */}

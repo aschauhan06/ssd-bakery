@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   ShoppingCart,
-  Star,
+  Star, MessageCircleMore
 } from "lucide-react";
 
 const cakes = [
@@ -49,7 +49,7 @@ const cakes = [
 
 export default function FeaturedCakes() {
   return (
-    <section className="py-20 bg-[#fffaf7]">
+    <section className="py-20 bg-[#fffaf7] scroll-mt-24" id="cake">
       <div className="container mx-auto px-4">
 
         {/* Heading */}
@@ -68,13 +68,13 @@ export default function FeaturedCakes() {
             </h2>
           </div>
 
-          <Button
+          {/* <Button
             variant="outline"
             className="rounded-full w-fit"
           >
             View All
             <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          </Button> */}
         </div>
 
         {/* Cards Grid */}
@@ -129,7 +129,7 @@ export default function FeaturedCakes() {
                     className="w-full rounded-full bg-pink-500 hover:bg-pink-600"
                   >
                     Order Now
-                    <ShoppingCart className="ml-2 h-4 w-4" />
+                    <MessageCircleMore className="ml-2 h-4 w-4" />
                   </Button>
 
                 </div>

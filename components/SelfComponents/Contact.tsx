@@ -13,8 +13,8 @@ import { Button } from "@/components/ui/button";
 
 export default function ContactUs() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-white scroll-mt-24">
+      <div className="container mx-auto px-4" id="contact">
 
         {/* Heading */}
         <div className="text-center mb-12">

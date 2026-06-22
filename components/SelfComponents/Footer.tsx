@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFF8F5] border-t">
+    <footer className="bg-[#FFF8F5] border-t scroll-mt-24">
       <div className="container mx-auto px-4 py-12">
 
         {/* Top Footer */}
@@ -49,19 +49,19 @@ export default function Footer() {
 
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="#hero" className="hover:text-[#D86B2B]">Home</Link>
               </li>
 
               <li>
-                <Link href="/cakes">Cakes</Link>
+                <Link href="#cake" className="hover:text-[#D86B2B]">Cakes</Link>
               </li>
 
               <li>
-                <Link href="/categories">Categories</Link>
+                <Link href="#category" className="hover:text-[#D86B2B]">Categories</Link>
               </li>
 
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="#whyUs" className="hover:text-[#D86B2B]">About Us</Link>
               </li>
             </ul>
           </div>
@@ -88,18 +88,18 @@ export default function Footer() {
 
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <Link href="/contact">
+                <Link href="#contact" className="hover:text-[#D86B2B]">
                   Contact
                 </Link>
               </li>
 
               <li>
-                <Link href="/faqs">
+                <Link href="#faqs" className="hover:text-[#D86B2B]">
                   FAQs
                 </Link>
               </li>
 
-              <li>
+              {/* <li>
                 <Link href="/privacy-policy">
                   Privacy Policy
                 </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <Link href="/terms">
                   Terms & Conditions
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
