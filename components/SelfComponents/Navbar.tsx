@@ -50,7 +50,9 @@ export default function Navbar() {
             </div>
 
             <a
-              href="https://wa.me/917007656589?text=Hi SSD Bakers, I would like to place an order."
+              href={`https://wa.me/917007656589?text=${encodeURIComponent(
+                "Hi SSD Bakers, I would like to place an order."
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -99,7 +101,9 @@ export default function Navbar() {
           </div>
 
           <a
-            href="https://wa.me/917007656589?text=Hi SSD Bakers, I would like to place an order."
+            href={`https://wa.me/917007656589?text=${encodeURIComponent(
+              "Hi SSD Bakers, I would like to place an order."
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
           >

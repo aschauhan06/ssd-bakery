@@ -45,13 +45,15 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
 
               <a
-                href="https://wa.me/917007656589?text=Hi SSD Bakers, I would like to place an order."
+                href={`https://wa.me/917007656589?text=${encodeURIComponent(
+                  "Hi SSD Bakers, I would like to place an order."
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button
                   size="lg"
-                  className="w-115 px-8 rounded-full bg-orange-500 hover:bg-orange-600"
+                  className="sm:w-55 px-8 rounded-full bg-orange-500 hover:bg-orange-600"
                 >
                   Order Now
                   <MessageCircleMore className="ml-2 h-4 w-4" />
