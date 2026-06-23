@@ -123,14 +123,21 @@ export default function FeaturedCakes() {
                       />
                     ))}
                   </div>
-
-                  <Button
-                    size="sm"
-                    className="w-full rounded-full bg-pink-500 hover:bg-pink-600"
+                  <a
+                    href={`https://wa.me/917007656589?text=${encodeURIComponent(
+                      "Hi SSD Bakers, I would like to place an order."
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Order Now
-                    <MessageCircleMore className="ml-2 h-4 w-4" />
-                  </Button>
+                    <Button
+                      size="sm"
+                      className="w-full rounded-full bg-pink-500 hover:bg-pink-600"
+                    >
+                      Order Now
+                      <MessageCircleMore className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
 
                 </div>
 

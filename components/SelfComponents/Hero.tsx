@@ -53,7 +53,7 @@ export default function Hero() {
               >
                 <Button
                   size="lg"
-                  className="sm:w-55 px-8 rounded-full bg-orange-500 hover:bg-orange-600"
+                  className="px-8 rounded-full bg-orange-500 hover:bg-orange-600"
                 >
                   Order Now
                   <MessageCircleMore className="ml-2 h-4 w-4" />
